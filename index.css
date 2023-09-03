@@ -1,0 +1,644 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    max-height: 1000vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1;
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+.image>img {
+    height: 50px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(187, 7, 187);
+    background-image: -webkit-linear-gradient(to left, rgba(240, 17, 103, 0.877), rgba(73, 14, 236, 0.904));
+    background-image: linear-gradient(to left, rgba(240, 17, 103, 0.877), rgba(73, 14, 236, 0.904));
+    box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.08), 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.08);
+    height: 4.5 rem;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10%;
+    padding-left: 10%;
+    align-items: center;
+    color: white;
+    z-index: 1;
+
+}
+
+.menu {
+    display: flex;
+    gap: 1.25rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navigation>ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    gap: 1.25rem;
+    scroll-behavior: smooth;
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navigation-item {
+    color: #ffffff;
+    padding: 0.45rem;
+    margin: auto;
+    height: 100%;
+    text-decoration: none;
+}
+
+.navigation-item:hover {
+    box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.08), 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.08);
+}
+
+
+.logout {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    gap: 1.25rem;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .navigation {
+        display: none;
+    }
+
+    .navbar {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background-image: -webkit-linear-gradient(to right, rgba(240, 17, 103, 0.877), rgba(73, 14, 236, 0.904));
+        background-image: linear-gradient(to right, rgba(240, 17, 103, 0.877), rgba(73, 14, 236, 0.904));
+    }
+
+
+
+}
+
+
+.Center {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Heading {
+    font-weight: 400;
+    color: black;
+    font-size: 90px;
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    animation: slidein 3s infinite;
+    animation-delay: 0.1s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@keyframes slidein {
+    0% {
+        left: -100%;
+        color: transparent;
+    }
+
+    25% {
+        color: white;
+    }
+
+    100% {
+        left: 20%;
+        color: black;
+    }
+}
+
+@-moz-keyframes slidein {
+    0% {
+        left: -100%;
+        color: transparent;
+    }
+
+    25% {
+        color: white;
+    }
+
+    100% {
+        left: 20%;
+        color: black;
+    }
+}
+
+@-webkit-keyframes slidein {
+    0% {
+        left: -100%;
+        color: transparent;
+    }
+
+    25% {
+        color: white;
+    }
+
+    100% {
+        left: 20%;
+        color: black;
+    }
+}
+
+@-o-keyframes slidein {
+    0% {
+        left: -100%; color: transparent;
+    }
+
+    25% {
+        color: white;
+    }
+
+    100% {
+        left: 20%; color: black;
+    }
+}
+
+.Text {
+    font-weight: 10;
+    font-size: 26px;
+    margin-top: 25px;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Spacing {
+    margin-top: 15px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.Home>.HomeImage {
+    position: relative;
+    margin: 125px auto;
+    width: 1200px;
+    object-fit: cover;
+    object-fit: fill;
+    image-resolution: initial;
+    max-height: 800px;
+}
+
+.Heading2 {
+    font-weight: 400;
+    font-size: 42px;
+    margin-top: 100px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    animation: slidein2 3s infinite;
+    animation-delay: 0.1s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@keyframes slidein2 {
+    0% {
+        left: -100%; color: transparent;
+    }
+
+    25% {
+        color: white;
+    }
+
+    100% {
+        left: 30%; color: black;
+    }
+}
+
+@-moz-keyframes slidein2 {
+    0% {
+        left: -100%; color: transparent;
+    }
+
+    25% {
+        color: white;
+    }
+
+    100% {
+        left: 30%; color: black;
+    }
+}
+
+@-webkit-keyframes slidein2 {
+    0% {
+        left: -100%; color: transparent;
+    }
+
+    25% {
+        color: white;
+    }
+
+    100% {
+        left: 30%; color: black;
+    }
+}
+
+@-o-keyframes slidein2 {
+    0% {
+        left: -100%; color: transparent;
+    }
+
+    25% {
+        color: white;
+    }
+
+    100% {
+        left: 30%; color: black;
+    }
+}
+
+.HomeImage {
+    -webkit-filter: saturate(125%);
+    filter: saturate(125%);
+    opacity: 125%;
+    -webkit-filter: sepia(25%);
+    filter: sepia(25%);
+}
+
+.HeadingGeneral {
+    position: relative;
+    font-weight: 20;
+    font-size: 42px;
+    margin-left: 200px;
+    animation: fadeandmove 5s infinite;
+    animation-delay: 1s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@keyframes fadeandmove {
+    0% {
+        left: 0px;
+        color: black;
+    }
+
+    50% {
+        left: 800px;
+        color: transparent;
+    }
+
+    100% {
+        left: 0px;
+        color: black;
+    }
+}
+
+@-moz-keyframes fadeandmove {
+    0% {
+        left: 0px;
+        color: black;
+    }
+
+    50% {
+        left: 800px;
+        color: transparent;
+    }
+
+    100% {
+        left: 0px;
+        color: black;
+    }
+}
+
+@-webkit-keyframes fadeandmove {
+    0% {
+        left: 0px;
+        color: black;
+    }
+
+    50% {
+        left: 800px;
+        color: transparent;
+    }
+
+    100% {
+        left: 0px;
+        color: black;
+    }
+}
+
+@-o-keyframes fadeandmove {
+    0% {
+        left: 0px;
+        color: black;
+    }
+
+    50% {
+        left: 800px;
+        color: transparent;
+    }
+
+    100% {
+        left: 0px;
+        color: black;
+    }
+}
+
+.HeadingRating {
+    position: relative;
+    font-weight: 20;
+    font-size: 42px;
+    margin-right: 0;
+    transform: translateX(37.5%);
+    animation: fadeup 3s infinite;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@keyframes fadeup {
+    0% {
+        bottom: -10px;
+        color: white;
+    }
+
+    30% {
+        bottom: -50px;
+        color: transparent;
+    }
+
+    100% {
+        bottom: -10px;
+        color: white;
+    }
+}
+
+@-moz-keyframes fadeup {
+    0% {
+        bottom: -10px;
+        color: white;
+    }
+
+    30% {
+        bottom: -50px;
+        color: transparent;
+    }
+
+    100% {
+        bottom: -10px;
+        color: white;
+    }
+}
+
+@-webkit-keyframes fadeup {
+    0% {
+        bottom: -10px;
+        color: white;
+    }
+
+    30% {
+        bottom: -50px;
+        color: transparent;
+    }
+
+    100% {
+        bottom: -10px;
+        color: white;
+    }
+}
+
+@-o-keyframes fadeup {
+    0% {
+        bottom: -10px;
+        color: white;
+    }
+
+    30% {
+        bottom: -50px;
+        color: transparent;
+    }
+
+    100% {
+        bottom: -10px;
+        color: white;
+    }
+}
+
+.HeadingBáo {
+    position: relative;
+    font-weight: 20;
+    font-size: 42px;
+    margin-right: 0;
+    transform: translate(35%, 15%);
+    animation: fadeout 3s infinite;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@keyframes fadeout {
+    0% {
+        bottom: 0;
+        color: black;
+    }
+
+    30% {
+        bottom: -50px;
+        color: transparent;
+    }
+
+    100% {
+        bottom: 0;
+        color: black;
+    }
+}
+
+@-moz-keyframes fadeout {
+    0% {
+        bottom: 0;
+        color: black;
+    }
+
+    30% {
+        bottom: -50px;
+        color: transparent;
+    }
+
+    100% {
+        bottom: 0;
+        color: black;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    0% {
+        bottom: 0;
+        color: black;
+    }
+
+    30% {
+        bottom: -50px;
+        color: transparent;
+    }
+
+    100% {
+        bottom: 0;
+        color: black;
+    }
+}
+
+@-o-keyframes fadeout {
+    0% {
+        bottom: 0;
+        color: black;
+    }
+
+    30% {
+        bottom: -50px;
+        color: transparent;
+    }
+
+    100% {
+        bottom: 0;
+        color: black;
+    }
+}
+
+.Gradient {
+    background-color: purple;
+    background-image: -webkit-linear-gradient(to left, rgba(240, 17, 103, 0.877), rgba(73, 14, 236, 0.904));
+    background-image: linear-gradient(to left, rgba(240, 17, 103, 0.877), rgba(73, 14, 236, 0.904));
+    color: white;
+}
+
+.Container {
+    display: inline-block;
+    left: 2.5%;
+    position: relative;
+    object-fit: cover;
+    height: 60vh;
+    width: 100%;
+    margin-left: 400px;
+    margin-bottom: 100px;
+}
+
+.TextBox {
+    padding: 10px 0px;
+}
+
+
+.Box {
+    width: 500px;
+    height: 550px;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffff;
+    box-shadow: 6px 5px 6px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 12px;
+    padding: 3.5rem;
+    color: #030303;
+}
+
+.TextBoxFont {
+    font-weight: 10;
+    font-size: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Input {
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid blueviolet;
+}
+
+.Checkbox {
+    margin-top: 15px;
+}
+
+.Button {
+    width: 100%;
+    font-size: 22px;
+    color: black;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    margin: 10px 0px 30px 0px;
+    cursor: pointer;
+}
+
+.Button:hover {
+    transition-delay: 0.1s;
+    transition-duration: 0.25s;
+    background-color: purple;
+    color: white;
+}
