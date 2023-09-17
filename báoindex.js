@@ -6,7 +6,7 @@ blogs.forEach((blog) => {
         `<div
         class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4"
     >
-        <a href="#_" class="block">
+        <a href=${blog.website} class="block">
             <img
                 class="object-cover w-full mb-2 overflow-hidden rounded-lg shadow-sm max-h-56"
                 src="${blog.image}"

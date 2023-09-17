@@ -222,7 +222,8 @@ a {
 
 @-o-keyframes slidein {
     0% {
-        left: -100%; color: transparent;
+        left: -100%;
+        color: transparent;
     }
 
     25% {
@@ -230,7 +231,8 @@ a {
     }
 
     100% {
-        left: 20%; color: black;
+        left: 20%;
+        color: black;
     }
 }
 
@@ -277,7 +279,8 @@ html {
 
 @keyframes slidein2 {
     0% {
-        left: -100%; color: transparent;
+        left: -100%;
+        color: transparent;
     }
 
     25% {
@@ -285,13 +288,15 @@ html {
     }
 
     100% {
-        left: 30%; color: black;
+        left: 30%;
+        color: black;
     }
 }
 
 @-moz-keyframes slidein2 {
     0% {
-        left: -100%; color: transparent;
+        left: -100%;
+        color: transparent;
     }
 
     25% {
@@ -299,13 +304,15 @@ html {
     }
 
     100% {
-        left: 30%; color: black;
+        left: 30%;
+        color: black;
     }
 }
 
 @-webkit-keyframes slidein2 {
     0% {
-        left: -100%; color: transparent;
+        left: -100%;
+        color: transparent;
     }
 
     25% {
@@ -313,13 +320,15 @@ html {
     }
 
     100% {
-        left: 30%; color: black;
+        left: 30%;
+        color: black;
     }
 }
 
 @-o-keyframes slidein2 {
     0% {
-        left: -100%; color: transparent;
+        left: -100%;
+        color: transparent;
     }
 
     25% {
@@ -327,7 +336,8 @@ html {
     }
 
     100% {
-        left: 30%; color: black;
+        left: 30%;
+        color: black;
     }
 }
 
@@ -351,68 +361,68 @@ html {
 
 @keyframes fadeandmove {
     0% {
-        left: 0px;
+        left: 0%;
         color: black;
     }
 
     50% {
-        left: 800px;
+        left: 50%;
         color: transparent;
     }
 
     100% {
-        left: 0px;
+        left: 0%;
         color: black;
     }
 }
 
 @-moz-keyframes fadeandmove {
     0% {
-        left: 0px;
+        left: 0%;
         color: black;
     }
 
     50% {
-        left: 800px;
+        left: 50%;
         color: transparent;
     }
 
     100% {
-        left: 0px;
+        left: 0%;
         color: black;
     }
 }
 
 @-webkit-keyframes fadeandmove {
     0% {
-        left: 0px;
+        left: 0%;
         color: black;
     }
 
     50% {
-        left: 800px;
+        left: 50%;
         color: transparent;
     }
 
     100% {
-        left: 0px;
+        left: 0%;
         color: black;
     }
 }
 
 @-o-keyframes fadeandmove {
     0% {
-        left: 0px;
+        left: 0%;
         color: black;
     }
 
     50% {
-        left: 800px;
+        left: 50%;
         color: transparent;
     }
 
     100% {
-        left: 0px;
+        left: 0%;
         color: black;
     }
 }

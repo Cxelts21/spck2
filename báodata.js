@@ -1,5 +1,6 @@
 const blogs = [
     {
+        website: "Blog1.html",
         image: "https://thumbs.dreamstime.com/z/surprised-fat-man-25234867.jpg",
         category: "Sức khỏe",
         title: "Làm thế nào để giảm cân?",
@@ -10,6 +11,7 @@ const blogs = [
     },
 
     {
+        website: "Blog1.html",
         image: "download.jpg",
         category: "Đồ ăn",
         title: "10 món ngon cho gia đình",
@@ -20,6 +22,7 @@ const blogs = [
     },
 
     {
+        website: "Blog1.html",
         image: "download (1).jpg", 
         category: "Học tập",
         title: "Các trường tâm điểm dành cho học sinh",
@@ -30,6 +33,7 @@ const blogs = [
     },
 
     {
+        website: "Blog1.html",
         image: "download (2).jpg",
         category: "Du lịch",
         title: "Những địa điểm du lịch đáng chú ý",
@@ -40,6 +44,7 @@ const blogs = [
     },
 
     {
+        website: "Blog1.html",
         image: "download (3).jpg",
         category: "Công việc",
         title: "Những công việc có mức lương cao nhất",
@@ -50,6 +55,7 @@ const blogs = [
     },
 
     {
+        website: "Blog1.html",
         image: "a.jpg",
         category: "Âm nhạc",
         title: "Những bài hát thịnh hành hiện nay",
