@@ -7,7 +7,8 @@ const blogs = [
         description: "Học được cách giảm cân hiệu quả với bài báo sau đây.",
         author: "User 1",
         date: "5-9-2022",
-        read_time: "10 phút"
+        read_time: "10 phút",
+        about_author: "Blog1.html",
     },
 
     {
@@ -19,6 +20,7 @@ const blogs = [
         author: "User 2",
         date: "2-2-2020",
         read_time: "5 phút",
+        about_author: "Blog1.html",
     },
 
     {
@@ -30,6 +32,7 @@ const blogs = [
         author: "User 3",
         date: "14-3-2021",
         read_time: "15 phút",
+        about_author: "Blog1.html",
     },
 
     {
@@ -41,6 +44,7 @@ const blogs = [
         author: "User 4",
         date: "4-5-2023",
         read_time: "7 phút",
+        about_author: "Blog1.html",
     },
 
     {
@@ -52,6 +56,7 @@ const blogs = [
         author: "User 5",
         date: "3-1-2021",
         read_time: "8 phút",
+        about_author: "Blog1.html",
     },
 
     {
@@ -63,5 +68,6 @@ const blogs = [
         author: "User 6",
         date: "27-4-2023",
         read_time: "13 phút",
+        about_author: "Blog1.html",
     },
 ]

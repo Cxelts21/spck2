@@ -80,30 +80,31 @@
                     <form>
                         <div class="TextBox">
                             <p class="TextBoxFont">Tên bạn (*)</p>
-                            <input type="text" placeholder="Đặt tên bạn vào đây" name="Name" id="name-input" class="Input" required>
+                            <input type="text" placeholder="Đặt tên bạn vào đây" name="Name" id="name-input"
+                                class="Input" required>
                         </div>
                         <div class="TextBox">
                             <p class="TextBoxFont">Giới tính</p>
-                            <input type="radio" name="Gender" value="Nam" id="gender-input" class="Checkbox" style="margin-right: 5px;" >Nam
-                            <input type="radio" name="Gender" value="Nữ" id="gender-input" style="margin-left: 20px; margin-right: 5px;" class="Checkbox">Nữ
-                            <input type="radio" name="Gender" value="Khác" id="gender-input" style="margin-left: 20px; margin-right: 5px;" class="Checkbox">Khác
+                            <input type="radio" name="Gender" value="Nam" id="gender-nam" class="Checkbox"
+                                style="margin-right: 5px;">Nam
+                            <input type="radio" name="Gender" value="Nữ" id="gender-nu"
+                                style="margin-left: 20px; margin-right: 5px;" class="Checkbox">Nữ
+                            <input type="radio" name="Gender" value="Khác" id="gender-khac"
+                                style="margin-left: 20px; margin-right: 5px;" class="Checkbox">Khác
                         </div>
                         <div class="TextBox">
                             <p class="TextBoxFont">Email</p>
-                            <input type="email" placeholder="Đặt email bạn vào đây" name="Email" id="email-input" class="Input">
+                            <input type="email" placeholder="Đặt email bạn vào đây" name="Email" id="email-input"
+                                class="Input">
                         </div>
                         <div class="TextBox">
                             <p class="TextBoxFont">Cảm nghĩ của bạn về báo</p>
-                            <input type="text" placeholder="Bạn cảm thấy gì về báo?" name="báo" id="báo-input" class="Input" required>
+                            <input type="text" placeholder="Bạn cảm thấy gì về báo?" name="báo" id="báo-input"
+                                class="Input" required>
                         </div>
                         <div class="TextBox">
-                            <button type="submit" onclick="Submit()" id="submit-button" class="TextBoxFont Button">Gửi</button>
-                            <script>
-                                function Submit(){
-                                    alert("Cảm ơn bạn đã gửi ý kiến!");
-                                    location.href = "#Rating";
-                                }
-                            </script>
+                            <button type="submit" onclick="Submit()" id="submit-button"
+                                class="TextBoxFont Button">Gửi</button>
                         </div>
 
                         <script src="heading.js"></script>
@@ -139,8 +140,10 @@
                                     </svg>
                                     <span>Featured</span>
                                 </div>
-                                <h1 class="text-4xl font-bold leading-none lg:text-5xl xl:text-6xl"><a href="#_">Welcome to báo!</a></h1>
-                                <p class="pt-2 text-sm font-medium">by <a href="#_" class="mr-1 underline">Nguyễn Văn Phong</a>
+                                <h1 class="text-4xl font-bold leading-none lg:text-5xl xl:text-6xl"><a href="Blog1.html"
+                                        class="flash">Welcome to báo!</a></h1>
+                                <p class="pt-2 text-sm font-medium">by <a href="Blog1.html"
+                                        class="mr-1 underline">Nguyễn Văn Phong</a>
                                     · <span class="mx-1">April 23rd, 2021</span> · <span class="mx-1 text-gray-600">5
                                         min. read</span></p>
                             </div>
@@ -160,11 +163,61 @@
 
         </div>
 
-    </form>>
+    </form>
 
 
 </body>
 
 
+<script>
+    function Submit() {
+
+        const name = document.getElementById('name-input').value;
+        const gender_nam = document.getElementById('gender-nam').checked;
+        const gender_nu = document.getElementById('gender-nu').checked;
+        const gender_khac = document.getElementById('gender-khac').checked;
+
+        const email = document.getElementById('email-input').value;
+        const bao = document.getElementById('báo-input').value;
+        if (name == "" || (!gender_nam && !gender_nu && !gender_khac) || email == "" || bao == "") {
+            alert('Chưa điền đủ thông tin!')
+            return;
+        }
+        alert("Cảm ơn bạn đã gửi ý kiến!");
+        document.getElementById('name-input').value = '';
+        document.getElementById('gender-nam').checked = false;
+        document.getElementById('gender-nu').checked = false;
+        document.getElementById('gender-khac').checked = false;
+        document.getElementById('email-input').value = '';
+        document.getElementById('báo-input').value = '';
+        location.href = "#Rating";
+    }</script>
+
+<footer class="bg-white white:bg-gray-900 m-4">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="Blog1.html" class="flex items-center mb-4 sm:mb-0">
+                <img src="Untitled.png" class="h-8 mr-3">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-black flash">Báo</span>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                <li>
+                    <a href="Blog1.html" class="mr-4 hover:underline md:mr-6 flash">About</a>
+                </li>
+                <li>
+                    <a href="Blog1.html" class="mr-4 hover:underline md:mr-6 flash">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="Blog1.html" class="mr-4 hover:underline md:mr-6 flash">Licensing</a>
+                </li>
+                <li>
+                    <a href="Blog1.html" class="hover:underline flash">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-sm  sm:text-center text-black">© 2023 <a href="Blog1.html" class="hover:underline">Báo™</a>. All Rights Reserved.</span>
+    </div>
+</footer>
 
 </html>
