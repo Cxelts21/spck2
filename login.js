@@ -1,73 +1,71 @@
+  const data = localStorage.getItem('users');
+  let users = [];
+  if (data) {
+    users = JSON.parse(data);
+  }
 document.addEventListener("DOMContentLoaded", function () {
-    const registerForm = document.getElementById("register-form");
-  
-    registerForm?.addEventListener("submit", function (event) {
-      event.preventDefault();
-  
+  const registerForm = document.getElementById("register-form");
 
-      const username = document.getElementById("username").value;
-      const password = document.getElementById("password").value;
-      const confirmPassword = document.getElementById("confirm-password").value;
+  registerForm?.addEventListener("submit", function (event) {
+    event.preventDefault();
 
-      if (username == "" && password == "" && confirmPassword == "") {
-        alert('Chưa điền đủ thông tin!')
-        return;
+
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirm-password").value;
+
+    if (username == "" && password == "" && confirmPassword == "") {
+      alert('Chưa điền đủ thông tin!')
+      return;
     }
-  
 
-      if (password !== confirmPassword) {
-        console.log(alert("Mật khẩu không khớp"));
-        return;
-      } else {
-        console.log(alert("Đăng kí thành công!"));
-        location.href = "index.html";
+
+    if (password !== confirmPassword) {
+      console.log(alert("Mật khẩu không khớp"));
+      return;
+    } else {
+      const user = {
+        username: username,
+        password: password,
       }
+      alert('Đăng kí thành công!')
+      users.push(user);
+      localStorage.setItem('users', JSON.stringify(users));
+      location.href = "index.html";
+    }
+    
 
-  
- 
-      localStorage.setItem("username", username);
-      localStorage.setItem("password", password);
-    });
+
+
+    localStorage.setItem("username", username);
+    localStorage.setItem("password", password);
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const loginForm = document.getElementById("login-form");
+
+  loginForm?.addEventListener("submit", function (event) {
+      event.preventDefault();
+      const username = document.getElementById('loginname').value;
+      const password = document.getElementById('loginpassword').value;
+      const data = localStorage.getItem('users');
+      const list_of_users = JSON.parse(data);
+      if (check_user_in_list(username, password, list_of_users)) {
+          alert("Đăng nhập thành công!");
+          location.href = "index.html";
+      } else {
+          alert("Tài khoản hoặc mật khẩu chưa chính xác!");
+      }
   });
 
-  document.getElementById('btn-login')
-    .addEventListener('click', function (event) {
-        event.preventDefault();
-        let loginName = document.getElementById('loginName')
-        let loginPassword = document.getElementById('loginPassword')
-
-        let users = JSON.parse(localStorage.getItem('users')) ?? []
-
-        for (var i = 0; i < users.length; i++) {
-            if (loginName.value === users[i].userName) {
-                if (loginPassword.value === users[i].password) {
-                    localStorage.setItem("isLogin", 1);
-                    location.href="index.html"
-                } else {
-                    alert('Password khong chinh xac!')
-                }
-            } else {
-                alert('User khong ton tai!')
-            }
-        }
-
-    })
-
-    document.getElementById("btn-signup")
-    .addEventListener('click', function (event) {
-        event.preventDefault();
-        let users = JSON.parse(localStorage.getItem('users')) ?? []
-
-        let registerUsername = document.getElementById('username')
-        let registerPassword = document.getElementById('password')
-
-        let newuser = {
-            id: users.length,
-            userName: registerUsername.value,
-            password: registerPassword.value
-        }
-        users.push(newuser)
-
-        localStorage.setItem('users', JSON.stringify(users))
-
-    })
+  function check_user_in_list(username, password, list_of_users) {
+      for (const user of list_of_users) {
+          if (user.username === username && user.password === password) {
+              return true;
+          }
+      }
+      return false;
+  };
+});
