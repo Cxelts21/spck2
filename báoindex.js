@@ -24,7 +24,7 @@ blogs.forEach((blog) => {
         ${blog.description}
         </p>
         <p class="pt-2 text-xs font-medium">
-            <a href="${blog.about_author}" class="mr-1 underline">${blog.author}</a> ·
+            <a href="${blog.about_author}" class="mr-1 underline flash">${blog.author}</a> ·
             <span class="mx-1">${blog.date}</span> ·
             <span class="mx-1 text-gray-600">${blog.read_time}</span>
         </p>

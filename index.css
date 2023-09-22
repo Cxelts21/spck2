@@ -132,12 +132,6 @@ a {
 }
 
 
-@media screen and (max-width: 600px) {
-    body {
-        flex-direction: column;
-    }
-}
-
 @media screen and (max-width: 1200px) {
     .navigation {
         display: none;
