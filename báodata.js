@@ -8,11 +8,11 @@ const blogs = [
         author: "User 1",
         date: "5-9-2022",
         read_time: "10 phút",
-        about_author: "Blog1.html",
+        about_author: "Author1.html",
     },
 
     {
-        website: "Blog1.html",
+        website: "Blog2.html",
         image: "download.jpg",
         category: "Đồ ăn",
         title: "10 món ngon cho gia đình",
@@ -20,11 +20,11 @@ const blogs = [
         author: "User 2",
         date: "2-2-2020",
         read_time: "5 phút",
-        about_author: "Blog1.html",
+        about_author: "Author2.html",
     },
 
     {
-        website: "Blog1.html",
+        website: "Blog3.html",
         image: "download (1).jpg", 
         category: "Học tập",
         title: "Các trường tâm điểm dành cho học sinh",
@@ -32,11 +32,11 @@ const blogs = [
         author: "User 3",
         date: "14-3-2021",
         read_time: "15 phút",
-        about_author: "Blog1.html",
+        about_author: "Author3.html",
     },
 
     {
-        website: "Blog1.html",
+        website: "Blog4.html",
         image: "download (2).jpg",
         category: "Du lịch",
         title: "Những địa điểm du lịch đáng chú ý",
@@ -44,11 +44,11 @@ const blogs = [
         author: "User 4",
         date: "4-5-2023",
         read_time: "7 phút",
-        about_author: "Blog1.html",
+        about_author: "Author4.html",
     },
 
     {
-        website: "Blog1.html",
+        website: "Blog5.html",
         image: "download (3).jpg",
         category: "Công việc",
         title: "Những công việc có mức lương cao nhất",
@@ -56,11 +56,11 @@ const blogs = [
         author: "User 5",
         date: "3-1-2021",
         read_time: "8 phút",
-        about_author: "Blog1.html",
+        about_author: "Author5.html",
     },
 
     {
-        website: "Blog1.html",
+        website: "Blog6.html",
         image: "a.jpg",
         category: "Âm nhạc",
         title: "Những bài hát thịnh hành hiện nay",
@@ -68,6 +68,6 @@ const blogs = [
         author: "User 6",
         date: "27-4-2023",
         read_time: "13 phút",
-        about_author: "Blog1.html",
+        about_author: "Author6.html",
     },
 ]
